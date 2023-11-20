@@ -1,0 +1,73 @@
+.price{
+    margin-top: 140px;
+    margin-bottom: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        margin-top: 23px;
+    }
+    .cards{
+        margin-top: 75px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+    }
+    h3{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        color: $main-black;
+    }
+    h2{
+        margin-top: 14px;
+        font-size: 45px;
+        color: $secondary-brown;
+
+    }
+    span{
+        font-size: 16px;
+    }
+    .price-card{
+        margin-top: 13px;
+        width: 360.182px;
+        height: 566px;
+        background-color: #FBDACF;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding-top: 36px;
+        padding-left: 46px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: start;
+    }
+    img{
+        position: absolute;
+        top: 5px;
+    }
+    button{
+        margin-top: 13PX;
+    }
+    p{
+        margin-left: 20px;
+    }
+    div{
+        position: relative;
+    }
+    .button{
+        padding-inline: 67px;
+    }
+   
+    .price-card:hover{
+        transform: scale(1.08);
+        transition: 0.5s;
+        background: linear-gradient(#476482,#816F8C);
+        h3{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@mixin mainBtn() {
+    font-size: 18px;
+    font-family: inherit;
+    color: white;
+    background: linear-gradient(90deg,#4499D9, #7367BE);
+    border: none;
+    border-radius: 100px;
+    padding: 13px 25px;
+}
+
+%flex_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex_div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+
+
+$main-black: #355070;
+$main-dark-brown: #6D597A;
+$main-brown: #B56576;
+$main-light-brown: #E56B6F;
+$main-yellow: #EAAC8B;
+$main-bg: #FFE6D6;
+$secondary-black: #446381;
+$secondary-brown: #EB8382;
+
+@import "./header";
+@import "./hero";
+@import "./vr_glasses";
+@import "./xbox";
+@import "./price";
+@import "./footer";
+
+
+*, html, *::after, *::before {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    max-width: 1167px;
+    margin-inline: auto;
+    background-color: $main-bg;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+h4 { 
+    color: $secondary-black;
+    font-size: 23px;
+    font-weight: 500;
+}
+h1 {
+    font-size: 58px;
+    font-weight: bold;
+    color: $secondary-brown;
+}
+p {
+    color: #826F8C;
+    line-height: 29px;
+    font-weight: 500;
+}
+.button{
+    @include mainBtn();
+}
+
+
+

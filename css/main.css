@@ -1,0 +1,116 @@
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+.header-links {
+  margin-right: 55px;
+  display: flex;
+  grid-column: 5/span 4;
+  justify-content: space-between;
+}
+.header-links a {
+  text-decoration: none;
+  outline: none;
+  color: #446381;
+}
+.header-btn {
+  grid-column: span 2;
+  font-size: 18px;
+  font-family: inherit;
+  color: white;
+  background: linear-gradient(#4499D9, #7367BE);
+  border: none;
+  border-radius: 100px;
+  padding: 13px 14px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 54px;
+  gap: 30px;
+}
+.hero .head {
+  display: flex;
+  align-items: center;
+}
+.hero .head h4 {
+  margin-right: 2px;
+  color: #446381;
+  font-size: 23px;
+  font-weight: 500;
+}
+.hero .head img {
+  margin-left: 29px;
+}
+.hero .slogan {
+  font-size: 58px;
+  font-weight: bold;
+}
+.hero .slogan h1:first-child {
+  color: #EB8382;
+}
+.hero .slogan h1:last-child {
+  color: #446381;
+}
+.hero .hero-txt * + * {
+  margin-top: 30px;
+}
+.hero .hero-txt p {
+  color: #826F8C;
+}
+.hero .hero-txt button {
+  font-size: 18px;
+  font-family: inherit;
+  color: white;
+  background: linear-gradient(#4499D9, #7367BE);
+  border: none;
+  border-radius: 100px;
+  padding: 13px 14px;
+}
+.hero .hero-img {
+  position: relative;
+}
+.hero .hero-img .card-vr {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: -60px;
+  max-width: 211px;
+  max-height: 95px;
+  border-radius: 10px;
+  font-size: 10px;
+  display: flex;
+  padding: 10px;
+}
+.hero .hero-img .card-vr * + * {
+  margin-top: 5px;
+}
+.hero .hero-img .card-vr span {
+  font-size: 8px;
+}
+.hero .hero-img .card-vr p {
+  color: #EB8382;
+}
+.hero .hero-img .card-vr h5 {
+  color: #446381;
+}
+
+*, html, *::after, *::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1167px;
+  margin-inline: auto;
+  background-color: #FFE6D6;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}/*# sourceMappingURL=main.css.map */

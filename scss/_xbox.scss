@@ -1,0 +1,11 @@
+.xbox {
+    background-color: #FBDED6;
+    margin-top: 130px;
+    @extend %flex_main;
+    div{
+        @extend %flex_div;
+    }
+    p{
+        max-width: 510px;
+    }
+}

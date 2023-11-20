@@ -1,0 +1,15 @@
+.vr_glasses{
+    margin-top: 150px;
+    @extend %flex_main;
+    gap: 25px;
+    img{
+        position: relative;
+        left: -51px;
+    }
+    div{
+        @extend %flex_div;
+    }
+    p{
+        max-width: 470px;
+    }
+}

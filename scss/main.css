@@ -1,0 +1,254 @@
+.xbox, .vr_glasses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.xbox div, .vr_glasses div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+}
+
+.header {
+  background-color: #FBDED6;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+.header-links {
+  margin-right: 55px;
+  display: flex;
+  grid-column: 5/span 4;
+  justify-content: space-between;
+}
+.header-links a {
+  text-decoration: none;
+  outline: none;
+  color: #446381;
+}
+.header-btn {
+  grid-column: span 2;
+  font-size: 18px;
+  font-family: inherit;
+  color: white;
+  background: linear-gradient(90deg, #4499D9, #7367BE);
+  border: none;
+  border-radius: 100px;
+  padding: 13px 25px;
+}
+
+.hero {
+  background-color: #FBDED6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 54px;
+  gap: 30px;
+}
+.hero .head {
+  display: flex;
+  align-items: center;
+}
+.hero .head h4 {
+  margin-right: 2px;
+  color: #446381;
+  font-size: 23px;
+  font-weight: 500;
+}
+.hero .head img {
+  margin-left: 29px;
+}
+.hero .slogan {
+  font-size: 58px;
+  font-weight: bold;
+}
+.hero .slogan h1:first-child {
+  color: #EB8382;
+}
+.hero .slogan h1:last-child {
+  color: #446381;
+}
+.hero .hero-txt * + * {
+  margin-top: 30px;
+}
+.hero .hero-txt p {
+  color: #826F8C;
+}
+.hero .hero-img {
+  position: relative;
+}
+.hero .hero-img .card-vr {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: -60px;
+  max-width: 211px;
+  max-height: 95px;
+  border-radius: 10px;
+  font-size: 10px;
+  display: flex;
+  padding: 10px;
+}
+.hero .hero-img .card-vr * + * {
+  margin-top: 5px;
+}
+.hero .hero-img .card-vr span {
+  font-size: 8px;
+}
+.hero .hero-img .card-vr p {
+  color: #EB8382;
+  max-width: 520px;
+}
+.hero .hero-img .card-vr h5 {
+  color: #446381;
+}
+
+.vr_glasses {
+  margin-top: 150px;
+  gap: 25px;
+}
+.vr_glasses img {
+  position: relative;
+  left: -51px;
+}
+.vr_glasses p {
+  max-width: 470px;
+}
+
+.xbox {
+  background-color: #FBDED6;
+  margin-top: 130px;
+}
+.xbox p {
+  max-width: 510px;
+}
+
+.price {
+  margin-top: 140px;
+  margin-bottom: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price h1 {
+  margin-top: 23px;
+}
+.price .cards {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.price h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  color: #355070;
+}
+.price h2 {
+  margin-top: 14px;
+  font-size: 45px;
+  color: #EB8382;
+}
+.price span {
+  font-size: 16px;
+}
+.price .price-card {
+  margin-top: 13px;
+  width: 360.182px;
+  height: 566px;
+  background-color: #FBDACF;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding-top: 36px;
+  padding-left: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: start;
+}
+.price img {
+  position: absolute;
+  top: 5px;
+}
+.price button {
+  margin-top: 13PX;
+}
+.price p {
+  margin-left: 20px;
+}
+.price div {
+  position: relative;
+}
+.price .button {
+  padding-inline: 67px;
+}
+.price .price-card:hover {
+  transform: scale(1.08);
+  transition: 0.5s;
+  background: linear-gradient(#476482, #816F8C);
+}
+.price .price-card:hover h3 {
+  color: white;
+}
+.price .price-card:hover p {
+  color: white;
+}
+
+.footer {
+  border-top: solid #355070 1px;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer img {
+  height: 65px;
+}
+
+*, html, *::after, *::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1167px;
+  margin-inline: auto;
+  background-color: #FFE6D6;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+h4 {
+  color: #446381;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: bold;
+  color: #EB8382;
+}
+
+p {
+  color: #826F8C;
+  line-height: 29px;
+  font-weight: 500;
+}
+
+.button {
+  font-size: 18px;
+  font-family: inherit;
+  color: white;
+  background: linear-gradient(90deg, #4499D9, #7367BE);
+  border: none;
+  border-radius: 100px;
+  padding: 13px 25px;
+}/*# sourceMappingURL=main.css.map */
